@@ -35,13 +35,13 @@ They are decided by:
 4. User declarations
 5. default browser declarations
 
-#### Specificity
+#### Specificity (when same importance)
 1. inline styles
 2. IDs
 3. Classes, pseudo-classes, attribute
 4. Elements, pseudo-elements
 
-#### Source Order
+#### Source Order (when same specificity)
 - The last declaration in the code will overrise all other declarations and will be applied.
 
 ### Cascade and Specificity
