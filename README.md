@@ -53,3 +53,11 @@ They are decided by:
 - The universal selector `*` has no specificity value (0, 0, 0, 0)
 - Rely more on **specificity** than on the **order** of selector
 - BUT rely on order when using 3rd-party stylesheets -- always put your author stylesheet last
+
+### How CSS Values are Processed
+1. Declared value (author declarations) 
+2. Cascaded value (after the cascade)
+3. Specified value (default, if there's no cascaded value)
+4. Computed value (converting relative values to absolute)
+5. Used value (final calculations based on layout)
+6. Actual value (browser and device restrictions)
