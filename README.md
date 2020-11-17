@@ -61,3 +61,17 @@ They are decided by:
 4. Computed value (converting relative values to absolute)
 5. Used value (final calculations based on layout)
 6. Actual value (browser and device restrictions)
+
+### How CSS is Parsed
+1. Is there a cascaded value?
+- Yes: Specified value === cascaded value
+- No: Is the property inherited? (specific to each property)
+  - Yes: Specified value === computed value of parent element
+  - No: Specified value === initial value (specific to each property)
+
+### CSS Inheritance
+- Properties related to text are inherited, e.g. `font-family`, `font-size`, `color`
+- The computed value of a property is what gets inherited, **not** the declared value
+- Inheritance of a property only works if no one declares a value for that property
+- The `inherit` keyword forces inheritance on a certain property
+- The `initial` keyword resets a property to its initial value
