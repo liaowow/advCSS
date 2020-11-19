@@ -75,3 +75,13 @@ They are decided by:
 - Inheritance of a property only works if no one declares a value for that property
 - The `inherit` keyword forces inheritance on a certain property
 - The `initial` keyword resets a property to its initial value
+
+### The Visual Formatting Model
+- Definition: Algorithm that calculates boxes, and determines the layout of these boxes for each element in the render tree, so it can determine the final layout of the page.
+- Dimensions of boxes: the box model
+- Box type: `inline`, `block`, and `inline-block`
+- Pisitioning scheme: floats and positioning
+- Stacking contexts
+- Other elements in the render tree, e.g. siblings, parents
+- Viewing size, dimentions of images, etc
+
