@@ -76,6 +76,57 @@ They are decided by:
 - The `inherit` keyword forces inheritance on a certain property
 - The `initial` keyword resets a property to its initial value
 
+### Inheritance vs. Selection (via [Udemy QA Section](https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274436#questions/6010626))
+When you choose something like:
+```css
+body {
+  font-family: Verdana;
+}
+```
+This is inheritance. It flows down. Each child inherits the properties of its parent. It doesn't create new instances of the different definitions in the selector.
+
+If you added this:
+```css
+* {
+  font-family: Arial;
+}
+ 
+body {
+  font-family: Verdana;
+}
+```
+You would think that, because body comes after the `*`, it would would override the previous selector. It doesn't, though.
+
+What is happening is that actual definitions override inheritance. The `*` creates a new selector for each element, making it a more specific selector for each element than inheritance from body.
+
+For instance, if you were to use:
+```css
+body { 
+  box-sizing: border-box; 
+}
+```
+You would still have to use the `*` selector in conjunction with the body selector, because you need to select all of the `:before` and `:after` pseudo-elements. 
+
+As a theoretical comparison:
+
+**body**
+
+- Applies style properties to body element.
+
+- Elements within body may inherit the property values. Some properties default to `inherit`.
+
+- Style declarations that match an element within body can override the inherited style.
+
+**The Universal Selector `*`** (all elements)
+
+- Applies style properties to all individual elements.
+
+- Replaces inherited style properties, and default 'initial values'. Blocks inheritance.
+
+- Other, more specific css selectors that match an element will replace the style properties applied by `*`.
+
+Check out [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) for more info.
+
 ### The Visual Formatting Model
 - Definition: Algorithm that calculates boxes, and determines the layout of these boxes for each element in the render tree, so it can determine the final layout of the page.
 - Dimensions of boxes: the box model
