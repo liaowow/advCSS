@@ -35,18 +35,18 @@ They are decided by:
 4. User declarations
 5. default browser declarations
 
-#### Specificity (when same importance)
+#### Specificity (when importance is the same)
 1. inline styles
 2. IDs
 3. Classes, pseudo-classes, attribute
 4. Elements, pseudo-elements
 
-#### Source Order (when same specificity)
+#### Source Order (when specificity is the same)
 - The last declaration in the code will overrise all other declarations and will be applied.
 
 ### Cascade and Specificity
 - CSS declared with `!important` have the highest priority
-- BUT use only `!important` as last resort. It's better to use correct specificities -- more maintainable code!
+- BUT only use `!important` as last resort. It's better to use correct specificities -- more maintainable code!
 - Inline styles will always have priority over styles in external stylesheets
 - A selector that contains 1 ID is more specific than one with 1000 classes
 - A selector that contains 1 class is more specific than one with 1000 elements
@@ -63,11 +63,11 @@ They are decided by:
 6. Actual value (browser and device restrictions)
 
 ### How CSS is Parsed
-1. Is there a cascaded value?
-- Yes: Specified value === cascaded value
+Is there a cascaded value?
+- Yes: Specified value = cascaded value
 - No: Is the property inherited? (specific to each property)
-  - Yes: Specified value === computed value of parent element
-  - No: Specified value === initial value (specific to each property)
+  - Yes: Specified value = computed value of parent element
+  - No: Specified value = initial value (specific to each property)
 
 ### CSS Inheritance
 - Properties related to text are inherited, e.g. `font-family`, `font-size`, `color`
@@ -95,7 +95,7 @@ body {
   font-family: Verdana;
 }
 ```
-You would think that, because body comes after the `*`, it would would override the previous selector. It doesn't, though.
+You would think that because body comes after the `*`, it would would override the previous selector. It doesn't, though.
 
 What is happening is that actual definitions override inheritance. The `*` creates a new selector for each element, making it a more specific selector for each element than inheritance from body.
 
