@@ -136,3 +136,46 @@ Check out [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selec
 - Other elements in the render tree, e.g. siblings, parents
 - Viewing size, dimentions of images, etc
 
+### The Think - Build - Architect Mindset
+- **Think**: Think about the layout of your webpage/web app before writing code.
+- **Build**: Build your layout in HTML and CSS with a consistent srtucture for naming classes.
+- **Architect**: Create a logical architecture for your CSS with files and folders.
+
+### THINK Component-Driven Design
+- **Modular building blocks** that make up interfaces
+- Held together by the **layout** of the page
+- **Reusable** across a project and between different projects
+- **Independent**, allowing us to use them anywhere on the page
+
+### BUILD BEM System
+- BEM: **B**lock **E**lement **M**odifier
+- Block: standalone component that is meaningful on its own
+- Element: part of a block that has no meaning on its own
+- Modifier: a different version of a block or element
+
+```css
+.block {}
+.block__element {}
+.block__element--modifier {}
+```
+Example:
+```css
+.recipe {}
+.recipe__btn {}
+.recipe__btn--round {}
+```
+
+### ARCHITECT The 7-1 Pattern
+- 7 different folders for partial Sass files
+- 1 main Sass file to import all other files into a compiled CSS stylesheet
+
+The 7 folders:
+```
+base/
+components/
+layout/
+pages/
+themes/
+abstracts/
+vendors/
+```
