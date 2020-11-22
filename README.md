@@ -46,13 +46,13 @@ They are decided by:
 
 ### Cascade and Specificity
 - CSS declared with `!important` have the highest priority
-- BUT only use `!important` as last resort. It's better to use correct specificities -- more maintainable code!
+  - BUT only use `!important` as last resort. It's better to use correct specificities -- more maintainable code!
 - Inline styles will always have priority over styles in external stylesheets
 - A selector that contains 1 ID is more specific than one with 1000 classes
 - A selector that contains 1 class is more specific than one with 1000 elements
 - The universal selector `*` has no specificity value (0, 0, 0, 0)
 - Rely more on **specificity** than on the **order** of selector
-- BUT rely on order when using 3rd-party stylesheets -- always put your author stylesheet last
+  - BUT rely on order when using 3rd-party stylesheets -- always put your author stylesheet last
 
 ### How CSS Values are Processed
 1. Declared value (author declarations) 
@@ -149,9 +149,9 @@ Check out [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selec
 
 ### BUILD BEM System
 - BEM: **B**lock **E**lement **M**odifier
-- Block: standalone component that is meaningful on its own
-- Element: part of a block that has no meaning on its own
-- Modifier: a different version of a block or element
+  - Block: standalone component that is meaningful on its own
+  - Element: part of a block that has no meaning on its own
+  - Modifier: a different version of a block or element
 
 ```css
 .block {}
