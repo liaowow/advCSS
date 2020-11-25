@@ -7,3 +7,6 @@
 - **Functions**: similar to mixins, but they produce a value that can be used later
 - **Extends**: to make different selectors inherit declarations that are common to all of them
 - **Control directives**: for writing complex code using conditionals and loops 
+
+#### Sass Practices on CodePen
+- [Variables and Nesting](https://codepen.io/liaowow/pen/MWjgbxo?editors=1100)
