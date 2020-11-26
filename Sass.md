@@ -10,3 +10,4 @@
 
 #### Sass Practices on CodePen
 - [Variables and Nesting](https://codepen.io/liaowow/pen/MWjgbxo?editors=1100)
+- [Mixins, Functions and Extends](https://codepen.io/liaowow/pen/zYKYERZ?editors=1100)
