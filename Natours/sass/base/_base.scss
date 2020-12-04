@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; */
+  /* dynamically renders font size based on user default font size (16px), so we can use percentage: (10 / 16) * 100 */
+  // This also defines what 1rem is, so the style stays in base file (instead of typography file)
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
