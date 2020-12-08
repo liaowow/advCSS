@@ -179,3 +179,38 @@ themes/
 abstracts/
 vendors/
 ```
+
+### Inline vs. Inline-block vs. Block
+- Inline: 
+  - does NOT start on a new line and only takes up as much width as its content
+  - any height and width properties will have no effect
+  - elements with default `inline` property: 
+    - `span`
+    - `a`
+    - `img`
+  - formatting tags that are inherently `inline`:
+    - `em`
+    - `strong`
+    - `i`
+    - `small`
+- Inline-block:
+  - essentially the same thing as inline, where it doesn’t start on a new line
+  - BUT you can set height and width values
+- Block:
+  - starts a new line and takes up the whole width
+  - you can set height and width values
+  - elements with default `inline` property: 
+    - `div`
+    - `h1`
+    - `p`
+    - `li`
+    - `section`
+*Reference: [Samantha Ming Pictorials](https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/)*
+
+### Responsive Design Principles
+- Fluid Grids and Layouts
+  - use `%` rather than `px` for all layout-related lengths
+- Flexiblae/Responsive Images
+  - ensures that they adapt nicely to the current viewport
+- Media Queries
+  - use breakpoints to create different versions of the website for different widths
