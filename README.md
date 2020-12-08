@@ -181,6 +181,8 @@ vendors/
 ```
 
 ### Inline vs. Inline-block vs. Block
+*Reference: [Samantha Ming Pictorials](https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/)*
+
 - Inline: 
   - does NOT start on a new line and only takes up as much width as its content
   - any height and width properties will have no effect
@@ -205,7 +207,6 @@ vendors/
     - `p`
     - `li`
     - `section`
-*Reference: [Samantha Ming Pictorials](https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/)*
 
 ### Responsive Design Principles
 - Fluid Grids and Layouts
