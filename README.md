@@ -42,7 +42,7 @@ They are decided by:
 4. Elements, pseudo-elements
 
 #### Source Order (when specificity is the same)
-- The last declaration in the code will overrise all other declarations and will be applied.
+- The last declaration in the code will override all other declarations and will be applied.
 
 ### Cascade and Specificity
 - CSS declared with `!important` have the highest priority
@@ -211,7 +211,7 @@ vendors/
 ### Responsive Design Principles
 - Fluid Grids and Layouts
   - use `%` rather than `px` for all layout-related lengths
-- Flexiblae/Responsive Images
+- Flexible/Responsive Images
   - ensures that they adapt nicely to the current viewport
 - Media Queries
   - use breakpoints to create different versions of the website for different widths
