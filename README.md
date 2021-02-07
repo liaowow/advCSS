@@ -215,3 +215,23 @@ vendors/
   - ensures that they adapt nicely to the current viewport
 - Media Queries
   - use breakpoints to create different versions of the website for different widths
+
+### Differentiating Operators for Specific Selectors
+- To select all `span` inside `p` tag:
+```css
+p span {
+  color: yellow;
+}
+```
+- To select `span` element only one level (i.e. first children) under `p` tag:
+```css
+p > span {
+  color: yellow;
+}
+```
+- To select adjacent/neighboring elements:
+```css
+p + span {
+  color: yellow;
+}
+```
