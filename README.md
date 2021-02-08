@@ -216,7 +216,7 @@ vendors/
 - Media Queries
   - use breakpoints to create different versions of the website for different widths
 
-### Differentiating Operators for Specific Selectors
+### Operators for Specific Selectors
 - To select all `span` inside `p` tag:
 ```css
 p span {
@@ -235,3 +235,12 @@ p + span {
   color: yellow;
 }
 ```
+
+### Pseudo-classes vs. Pseudo-elements
+- Pseudo-classes:
+  - predefined keywords that are used to select an element based on its
+**state**, or to target a specific child
+  - start with a single colon, e.g. `:active`, `:checked`, `:disabled`, `:not()`, `:nth-child()`
+- Pseudo-elements:
+  - used to style a specific part of an element
+  - start with a double colon, e.g. `::before`, `::after`
