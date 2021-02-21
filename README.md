@@ -229,12 +229,43 @@ p > span {
   color: yellow;
 }
 ```
-- To select adjacent/neighboring elements:
+- To select only the first adjacent/neighboring element:
 ```css
 p + span {
   color: yellow;
 }
 ```
+- To select ALL adjacent/neighboring elements:
+```css
+p ~ span {
+  color: yellow;
+}
+```
+- Use `*` to select **all** attributes that include the word "google":
+```css
+a[href*="google"] {
+  color: orange;
+}
+```
+- Use `^` to select attributes that begins with the word "https":
+```css
+a[href^="https"] {
+  color: orange;
+}
+```
+- Use `$` to select attributes that ends with the word ".com":
+```css
+a[href$=".com"] {
+  color: orange;
+}
+```
+- Use `~` to select attributes that contain **exactly** the word "google":
+```css
+a[href~="google"] {
+  color: orange;
+}
+```
+
 
 ### Pseudo-classes vs. Pseudo-elements
 - Pseudo-classes:
