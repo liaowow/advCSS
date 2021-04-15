@@ -275,3 +275,13 @@ a[href~="google"] {
 - Pseudo-elements:
   - used to style a specific part of an element
   - start with a double colon, e.g. `::before`, `::after`
+
+### Bits and Pieces
+- [currentColor](https://css-tricks.com/currentcolor/): Use this value to indicate you want to use the value of color for other properties that accept a color value: borders, box shadows, outlines, or backgrounds
+```css
+div { 
+  color: red; 
+  border: 5px solid currentColor;
+  box-shadow: 0 0 5px solid currentColor;
+}
+```
