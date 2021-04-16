@@ -285,3 +285,10 @@ div {
   box-shadow: 0 0 5px solid currentColor;
 }
 ```
+- [<details>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) tags in HTML: Creates an accordion. Must be used with `<summary>`
+```html
+<details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+</details>
+```
