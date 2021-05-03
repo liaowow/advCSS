@@ -292,7 +292,7 @@ div {
     Something small enough to escape casual notice.
 </details>
 ```
-- Flexbox:
+- Flexbox: growing and shrinking
   - There are two important sizes when dealing with Flexbox: the **minimum content size**, and the **hypothetical size**.
   - The minimum content size is the smallest an item can get without its contents overflowing.
   - Setting `width` in a flex row (or `height` in a flex column) sets the **hypothetical** size. It isn't a guarantee, it's a suggestion.
@@ -300,3 +300,6 @@ div {
   - `flex-grow` will allow a child to consume any excess space in the container. It has no effect if there isn't any excess space.
   - `flex-shrink` will pick which item to consume space from, if the container is too small. It has no effect if there *is* any excess space.
   - `flex-shrink` can't shrink an item below its minimum content size. If all the items are below their minimum content size, this property has no effect.
+  - `flex: 1` will assign `flex-grow: 1`, but it will also set `flex-basis: 0%`. It won't affect the default value for `flex-shrink`, which is `1`.
+  - You can pass up to **3 values** to the `flex` shorthand, if you'd like to also tweak `flex-shrink` (2nd value) and `flex-basis` (3rd value).
+  - Since `flex-basis` is a synonym for `width` in a flex row, we're effectively shrinking each child to have a “hypothetical width” of 0px, and then distributing all of the space between each child.
