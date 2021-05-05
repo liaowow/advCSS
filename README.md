@@ -303,4 +303,18 @@ div {
   - `flex: 1` will assign `flex-grow: 1`, but it will also set `flex-basis: 0%`. It won't affect the default value for `flex-shrink`, which is `1`.
   - You can pass up to **3 values** to the `flex` shorthand, if you'd like to also tweak `flex-shrink` (2nd value) and `flex-basis` (3rd value).
   - Since `flex-basis` is a synonym for `width` in a flex row, we're effectively shrinking each child to have a “hypothetical width” of 0px, and then distributing all of the space between each child.
+  - Shorthand gotcha: 
+    - When we use the `flex` shorthand, we set `flex-basis` to `0`, and this value will override any `width` you set.
+    ```css
+    .item {
+      flex: 1;
+      width: 200px;
+    }
+    ``` 
+    - To avoid this problem, it's best to use the `flex` shorthand with `flex-basis`:
+    ```css
+    .item {
+      flex: 1 1 200px;
+    }
+    ``` 
   - Additional Resources from [CSS-Tricks](https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/)
