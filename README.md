@@ -323,3 +323,5 @@ div {
   - An exception to this rule is relative positioning, but it's kind of a special case.
     - If you give a flex child relative positioning, that element is technically being rendered in two different layout modes, but they're compatible; the element is first laid out inside the flex container, and then transposed using top/left/right/bottom by positioned layout.
   - `z-index` typically only works on an element using "positioned" layout (relative, absolute, fixed, or sticky), but there is one exception: the children of a `display: flex` parent can also use `z-index`. This will cause the element to create a stacking context.
+
+- [clamp](https://blog.bitsrc.io/css-clamp-the-responsive-combination-weve-all-been-waiting-for-f1ce1981ea6e): CSS `clamp()` offers the best of CSS `min()` and CSS `max()` combined. CSS `clamp()` essentially clamps a value between an upper and lower bound. `clamp()` enables selecting a middle value within a range of values between a defined minimum and maximum. It takes three parameters: a minimum value, a preferred value, and a maximum allowed value.
